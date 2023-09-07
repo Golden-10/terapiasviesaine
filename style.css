@@ -12,15 +12,16 @@ html {
   --font-family-raleway: 'Raleway', sans-serif;
   --font-family-lato: 'Lato', sans-serif;
 
-  --font-size-h1:6rem;
-  --font-size-hero-p:3.4rem;
-  --font-size-h2:4rem;
-  --font-size-h3:2.8rem;
-  --font-size-p:1.8rem;
-  --font-size-p-2:1.4rem;
-  --font-header-p:2.2rem;
-  --font-header-li:1.4rem;
-  --font-size-cta:2rem;
+  --font-size-h1:7rem;
+  --font-size-hero-h2:4.8rem;
+  --font-size-hero-p:4.4rem;
+  --font-size-h2:4.8rem;
+  --font-size-h3:3.8rem;
+  --font-size-p:2.4rem;
+  --font-size-p-2:2rem;
+  --font-header-p:3.2rem;
+  --font-header-li:2.6rem;
+  --font-size-cta:2.8rem;
   
 
   --marron:#281a10;
@@ -58,7 +59,7 @@ html {
 }
 .header-navbar__ul li {
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 24px;
   font-size: var(--font-header-li);
   letter-spacing: 1.2px;
 }
@@ -89,9 +90,9 @@ html {
   align-items: center;
 }
 .hero__title-container{
-  margin-left: 1.8%;
+  margin-left: 1.4%;
   height: 90%;
-  width: 40%;
+  width: 38%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,22 +101,32 @@ html {
   border-radius:  24px 24px 24px 24px;
 }
 .hero__h1{
-  margin: 8% 6% 0 6% ;
+  margin: 12% 6% 0% 6% ;
   font-family: var(--font-family-nunito-sans);
   font-size: var(--font-size-h1);
   color: var(--color-gris-oscuro);
   text-align: center;
+}
+.subtitle-hero{
+  margin: 0 10%;
+  color: var(--violeta);
+  font-size: var(--font-size-hero-h2);
+  font-family: var(--font-family-nunito-sans);
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.4px;
 }
 .hero__p{
   margin: 0 10%;
   color: var(--violeta);
   font-size: var(--font-size-hero-p);
   font-family: var(--font-family-nunito-sans);
-  font-weight: 600;
+  
   text-align: center;
   letter-spacing: 0.4px;
 }
 .cta{
+ 
   display: inline-block;
   padding: 16px 32px;
   border-radius: 12px;
@@ -131,7 +142,7 @@ html {
   background-color:var(--color-cta-hover);
 }
 .hero__cta{
-  margin-bottom: 6%;
+  margin-bottom: 8%;
 }
 .hero__image-container{
   width: 100vw;
@@ -377,7 +388,7 @@ html {
   justify-content: space-evenly;
 }
 .footer-icon-container img{
-  width: 40px;
+  width: 60px;
   height: auto;
 }
 .icon-footer-wrap{
@@ -394,31 +405,63 @@ html {
   }
 }
 
+@media screen and (max-width:2055px){
+  .hero__title-container{
+    width: 46%;
+  }
+}
+@media screen and (max-width:1300px){
+  .hero__title-container{
+    width: 48%;
+  }
+  :root{
+  --font-size-h1:6.4rem;
+  --font-size-hero-h2:4.4rem;
+  --font-size-hero-p:3.8rem;
+  --font-size-h2:4.6rem;
+  --font-size-h3:3.4rem;
+  --font-size-p:2.2rem;
+  --font-size-p-2:1.8rem;
+  --font-header-p:3rem;
+  --font-header-li:2.4rem;
+  --font-size-cta:2.8rem;
+  }
+}
 @media screen and (max-width:1024px){
  
   :root{
-    --font-size-h1:5.6rem;
-    --font-size-hero-p:3.2rem;
-    --font-size-h2:4rem;
-    --font-size-h3:2.8rem;
-    --font-size-p:1.8rem;
-    --font-size-p-2:1.4rem;
-    --font-header-p:2rem;
-    --font-header-li:1.4rem;
-    --font-size-cta:2rem;
+    --font-size-h1:6.6rem;
+    --font-size-hero-h2:4.4rem;
+    --font-size-hero-p:3.8rem;
+    --font-size-h2:4.4rem;
+    --font-size-h3:3.2rem;
+    --font-size-p:2rem;
+    --font-size-p-2:1.7rem;
+    --font-header-p:2.8rem;
+    --font-header-li:2.2rem;
+    --font-size-cta:2.8rem;
   }
   .hero__title-container{
-    margin-left: 1.4%;
-    width: 48%;
+    
+    width: 58%;
   }
 }
 
 @media screen and (max-width:960px){
   
-  :root{  
-    --font-size-h1:5.4rem;
-    --font-size-hero-p:3rem;
-   }
+ 
+   :root{
+    --font-size-h1:6rem;
+    --font-size-hero-h2:4.4rem;
+    --font-size-hero-p:3.2rem;
+    --font-size-h2:4.4rem;
+    --font-size-h3:3rem;
+    --font-size-p:1.8rem;
+    --font-size-p-2:1.5rem;
+    --font-header-p:2.6rem;
+    --font-header-li:2rem;
+    --font-size-cta:2.5rem;
+  }
 .header-navbar{
   display: none;
 }
@@ -434,6 +477,7 @@ html {
   }
   .hero__title-container{
     width: 88%;
+    margin-left: 0;
   }
 }
 
@@ -467,6 +511,9 @@ html {
   .cta-perfil-container{
     margin: 5%;
   }  
+  .footer-icon-container img{
+    width: 40px;
+  }
 }
 
 @media screen and (max-width:640px){
@@ -479,17 +526,6 @@ html {
 
 @media screen and (max-width:468px){
 
-  :root{  
-    --font-size-h1:5.2rem;
-    --font-size-hero-p:3rem;
-    --font-size-h2:3.8rem;
-    --font-size-h3:2.6rem;
-    --font-size-p:1.6rem;
-    --font-size-p-2:1.2rem;
-    --font-header-p:2rem;
-    --font-header-li:1.2rem;
-    --font-size-cta:1.8rem;
-  }
   .hero__title-container{
     width: 94%;
   }
